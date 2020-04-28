@@ -1,0 +1,32 @@
+PODS:
+  - RxCocoa (5.0.0):
+    - RxRelay (~> 5)
+    - RxSwift (~> 5)
+  - RxRelay (5.1.0):
+    - RxSwift (~> 5)
+  - RxSwift (5.0.0)
+  - SDWebImage (4.4.2):
+    - SDWebImage/Core (= 4.4.2)
+  - SDWebImage/Core (4.4.2)
+
+DEPENDENCIES:
+  - RxCocoa (= 5.0.0)
+  - RxSwift (= 5.0.0)
+  - SDWebImage (= 4.4.2)
+
+SPEC REPOS:
+  trunk:
+    - RxCocoa
+    - RxRelay
+    - RxSwift
+    - SDWebImage
+
+SPEC CHECKSUMS:
+  RxCocoa: fcf32050ac00d801f34a7f71d5e8e7f23026dcd8
+  RxRelay: a168bd6caf712d00c676ac344e9295afc93b418e
+  RxSwift: 8b0671caa829a763bbce7271095859121cbd895f
+  SDWebImage: 624d6e296c69b244bcede364c72ae0430ac14681
+
+PODFILE CHECKSUM: 5f25dadd49598e2f8096aa21b675ae742945eb9b
+
+COCOAPODS: 1.9.1
