@@ -8,7 +8,7 @@
 
 import Foundation
 
-public struct FoodResponseWrapper {
+public struct FoodModel {
     public var foodName: String?
     public var foodDesc: String?
     public var foodPrice: String?

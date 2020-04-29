@@ -9,5 +9,5 @@ target 'Submission' do
   pod 'RxSwift', '5.0.0'
   pod 'RxCocoa', '5.0.0'
   pod 'SDWebImage', '4.4.2'
-
+  pod 'SnapKit', '5.0.0'
 end

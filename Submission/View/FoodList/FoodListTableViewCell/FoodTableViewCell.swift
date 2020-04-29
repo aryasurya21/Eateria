@@ -25,11 +25,10 @@ class FoodTableViewCell: UITableViewCell {
         self.contentView.frame = contentView.frame.inset(by: UIEdgeInsets(top: 10, left: 8, bottom: 10, right: 8))
     }
 
-    public func setCell(_ data: FoodResponseWrapper){
+    public func setCell(_ data: FoodModel){
         self.foodNameLabel.text = data.foodName ?? ""
         self.foodPriceLabel.text = data.foodPrice ?? ""
         self.imageAvatar.sd_setImage(with: URL(string: data.foodImage ?? ""), placeholderImage: #imageLiteral(resourceName: "food"))
-        self.imageAvatar.makeRounded()
     }
     
 }

@@ -17,20 +17,20 @@ final class FoodViewModel: ViewModelType {
     }
     
     public struct Output {
-        let data: Driver<[FoodResponseWrapper]>
+        let data: Driver<[FoodModel]>
     }
     
     func transform(input: FoodViewModel.Input) -> FoodViewModel.Output {
-        let foodData = input.refreshTrigger.flatMapLatest{ _ -> Driver<[FoodResponseWrapper]> in
+        let foodData = input.refreshTrigger.flatMapLatest{ _ -> Driver<[FoodModel]> in
     
             let foodTarget = FoodTarget.instance
             let foodData = foodTarget.getFoodList()
             
-            var arrData: [FoodResponseWrapper] = []
+            var arrData: [FoodModel] = []
             var tempValues: [String] = []
             
             for food in foodData {
-                var tempFood = FoodResponseWrapper(foodName: "", foodDesc: "", foodPrice: "", foodRating: "", foodImage: "")
+                var tempFood = FoodModel(foodName: "", foodDesc: "", foodPrice: "", foodRating: "", foodImage: "")
                 
                 tempValues.append(food["foodName"]!)
                 tempValues.append(food["foodDesc"]!)

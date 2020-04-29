@@ -16,10 +16,9 @@ final class FoodNavigator {
     init(navigationController : UINavigationController?) {
         self.navigationController = navigationController
     }
-       
-    func goToDetail(_ foodData: FoodResponseWrapper){
+        
+    func goToDetail(_ foodData: FoodModel){
         let foodDetailVC = FoodDetailViewController(foodData)
-       
         UIApplication.topViewController()?.navigationController?.pushViewController(foodDetailVC, animated: true)
     }
     
